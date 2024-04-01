@@ -87,7 +87,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/03/31/111/">111</a>
+      <a class="p-name article-title" href="/2024/03/31/111/">如何搭建自己的代理池</a>
     </h1>
   
 
@@ -95,11 +95,22 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <h4 id="搭建过程："><a href="#搭建过程：" class="headerlink" title="搭建过程："></a>搭建过程：</h4><h6 id="Redis-下载：https-github-com-tporadowski-redis-releases"><a href="#Redis-下载：https-github-com-tporadowski-redis-releases" class="headerlink" title="Redis 下载：https://github.com/tporadowski/redis/releases"></a>Redis 下载：<a target="_blank" rel="noopener" href="https://github.com/tporadowski/redis/releases">https://github.com/tporadowski/redis/releases</a></h6><p>下载成功后：输入命令：</p>
+<p>&#96;&#96;redis-server.exe redis.windows.conf&#96;， 启动Redis服务</p>
+<p>另外再打开一个cmd窗口，输入命令：<code>redis-server --service-install redis.windows.conf</code>，安装Redis到Windows服务</p>
+<p>然后 提示安装服务 同意后启动</p>
+<h6 id="proxy-pool下载：Releases-·-jhao104-proxy-pool-github-com"><a href="#proxy-pool下载：Releases-·-jhao104-proxy-pool-github-com" class="headerlink" title="proxy_pool下载：Releases · jhao104&#x2F;proxy_pool (github.com)"></a>proxy_pool下载：<a target="_blank" rel="noopener" href="https://github.com/jhao104/proxy_pool/releases">Releases · jhao104&#x2F;proxy_pool (github.com)</a></h6><p>下载对应的包：pip install -r requirements.txt</p>
+<p>有些包版本可能有问题 需要重新下载</p>
+<p>执行：python proxyPool.py schedule &amp;&amp; python proxyPool.py server</p>
+<p>也可以写一个脚本 start_proxy.sh</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">python proxyPool.py schedule &amp;  # 启动爬虫</span><br><span class="line"></span><br><span class="line">sleep 5</span><br><span class="line"></span><br><span class="line">python proxyPool.py server  # 启动api服务</span><br></pre></td></tr></table></figure>
+
+<p>访问 127.0.0.1：5010&#x2F;get 即可看到获取到的代理ip</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/31/111/" data-id="clufj0li80000tguhe4uhazsv" data-title="111" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/03/31/111/" data-id="clufj0li80000tguhe4uhazsv" data-title="如何搭建自己的代理池" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -193,7 +204,7 @@
       <ul>
         
           <li>
-            <a href="/2024/03/31/111/">111</a>
+            <a href="/2024/03/31/111/">如何搭建自己的代理池</a>
           </li>
         
           <li>
